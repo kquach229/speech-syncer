@@ -15,7 +15,7 @@ const useTranslate = (sourceText: string, selectedLanguage: string): string => {
     async (text: string) => {
       try {
         const response = await openai.chat.completions.create({
-          model: "gpt-4o",
+          model: "gpt-3.5-turbo",
           messages: [
             {
               role: "user",
