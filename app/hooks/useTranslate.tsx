@@ -3,7 +3,9 @@ import OpenAI from "openai";
 
 // Ensure that the OpenAI API key is set
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "", // Use environment variable
+  apiKey:
+    "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" ||
+    "", // Use environment variable
   dangerouslyAllowBrowser: true, // Understand the implications of using this option
 });
 
