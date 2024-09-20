@@ -25,6 +25,7 @@ const useTranslate = (sourceText: string, selectedLanguage: string): string => {
           stream: false, // Set to false if you don't need streaming
         });
 
+        //
         const data =
           response.choices[0].message.content ||
           'Api error: you do not have access to the chat-gpt4 plan or your credits have run out. Please upgrade your billing plan to continue using';
