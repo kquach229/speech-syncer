@@ -10,7 +10,7 @@ const openai = new OpenAI({
 const useTranslate = (sourceText: string, selectedLanguage: string): string => {
   const [targetText, setTargetText] = useState('');
 
-  // Function to handle translation
+  // Function to handle translation new build
   const handleTranslate = useCallback(
     async (text: string) => {
       try {
